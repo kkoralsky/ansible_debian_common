@@ -2,3 +2,12 @@
 - name: update apt cache
   apt: update_cache=yes cache_valid_time='{{ 3600*24*apt_cache_days }}'
   run_once: not apt_update
+
+- apt: name=locales
+
+- name: install additional packages
+  apt: name="{{ item }}"
+  with_items: '{{ sys_packages }}'
+
+- locale_gen: name='{{ item }}'
+  with_items: '{{ sys_locales }}'

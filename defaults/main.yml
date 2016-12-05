@@ -1,3 +1,6 @@
 ---
 apt_cache_days: 1
 apt_update: no
+
+sys_locales: [ pl_PL.UTF-8 ]
+sys_packages: []
