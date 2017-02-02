@@ -9,5 +9,10 @@
   apt: name="{{ item }}"
   with_items: '{{ sys_packages }}'
 
+- name: set timezone
+  timezone: name='{{ timezone }}'
+  ignore_errors: true
+
 - locale_gen: name='{{ item }}'
   with_items: '{{ sys_locales }}'
+  ignore_errors: true

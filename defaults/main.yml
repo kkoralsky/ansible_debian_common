@@ -4,3 +4,5 @@ apt_update: no
 
 sys_locales: [ pl_PL.UTF-8 ]
 sys_packages: []
+
+timezone: Europe/Warsaw
