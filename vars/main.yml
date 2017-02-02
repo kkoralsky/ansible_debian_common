@@ -1,0 +1,2 @@
+isdocker: ansible_connection == "docker"
+isnotdocker: ansible_connection != "docker"
