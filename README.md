@@ -16,14 +16,14 @@ Role Variables
 
 - `sys_locales` - list of locales to generate: `pl_PL.UTF-8` by default
 - `sys_packages` - list of packages to install
-- `bootstrap_as` - username to use for [remote boostrapping](https://github.com/xkoralsky/ansible_bootstrap.git)
+- `bootstrap_as` - username to use for [remote boostrapping](https://github.com/kkoralsky/ansible_bootstrap.git)
 - `bootstrap_priv_key` - SSH private key location to use for *bootstrapping* mentioned above
 - `bootstrap_use_sudo` - use `sudo` for *boostrapping*
 
 Dependencies
 ------------
 
-- [bootstrap](https://github.com/xkoralsky/ansible_bootstrap.git)
+- [bootstrap](https://github.com/kkoralsky/ansible_bootstrap.git)
 
 Example Playbook
 ----------------
