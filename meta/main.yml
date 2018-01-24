@@ -7,15 +7,10 @@ galaxy_info:
   platforms:
   - name: Debian
     versions:
-    - all
+      - all
+  - name: Ubuntu
+    versions:
+      - all
   galaxy_tags: [ debian, apt ]
 
-dependencies:
-  - role: bootstrap
-    ansible_user: '{{ bootstrap_as }}'
-    ansible_ssh_private_key_file: '{{ bootstrap_priv_key|default("") }}'
-    when: 'bootstrap_as is defined and bootstrap_use_sudo|default(False)'
-  - role: bootstrap
-    ansible_user: '{{ bootstrap_as }}'
-    ansible_ssh_private_key_file: '{{ bootstrap_priv_key }}'
-    when: 'bootstrap_as is defined and not bootstrap_use_sudo|default(False)'
+dependencies: []
