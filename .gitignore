@@ -1,2 +1,1 @@
-tests/.vagrant
-tests/*.retry
+.molecule
